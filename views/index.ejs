@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All chats</title>
+</head>
+<body>
+    <h2 style="text-align: center; ">All chats</h2>
+    <% for(let chat of chats) {%>
+        <div style="margin-left: 20px;  width: 300px; border-radius:10px; background-color: olivedrab" > 
+        <p style="height: 30px;  margin-top:50px; padding:8px 20px; width: 200px; font-size: 26px; border-radius: 5px; ">From: <b><%= chat.from %></b></p>
+    <p  style="height:120px; padding:8px 20px; margin-left: 25px; background-color: rgb(131, 161, 233); width: 200px; border-top-left-radius:15px ; border-bottom-right-radius: 25px; font-size: 22px; color:rgb(25, 93, 194)" ><%= chat.msg %></p>
+    <p  style="width: 180px; color: rgb(87, 2, 2); font-size: 20; margin-left: 10px;" >Received by: <i> <%= chat.to %></i></p>
+    <hr>
+</div>
+<% }  %>
+</body>
+</html>

@@ -3,11 +3,11 @@ const mongoose = require("mongoose");
 const chatSchema = new mongoose.Schema({
   from: {
     type: String,
-    require: true,
+    required: true,
   },
   to: {
     type: String,
-    require: true
+    required: true
 
   },
   msg: {
@@ -16,7 +16,7 @@ const chatSchema = new mongoose.Schema({
   },
   created_at: {
     type: String,
-    require: true,
+    required: true,
 
   },
 });
